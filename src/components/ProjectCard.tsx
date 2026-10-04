@@ -1,3 +1,4 @@
+import { track } from "@vercel/analytics";
 import { motion, type Variants } from "framer-motion";
 import StarIcon from "./icons/StarIcon";
 import Tag from "./Tag";
@@ -84,6 +85,7 @@ export default function ProjectCard({
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => track("project_github_click", { project: project.title})}
                             className="inline-flex items-center gap-1.5 font-mono text-body-sm text-primary hover:underline"
                         >
                             <span>GitHub</span>

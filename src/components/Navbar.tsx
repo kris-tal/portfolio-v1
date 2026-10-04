@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
+import { track } from "@vercel/analytics";
 import GithubIcon from "./icons/GithubIcon";
 import LinkedInIcon from "./icons/LinkedInIcon";
 
@@ -84,6 +85,7 @@ export default function Navbar() {
                         href="https://github.com/kris-tal"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => track("github_click")}
                         className="rounded-full bg-surface/30 p-1.5 text-textMuted transition-colors hover:text-text"
                         aria-label="GitHub profile"
                     >
@@ -94,6 +96,7 @@ export default function Navbar() {
                         href="https://www.linkedin.com/in/maja-giglok-7810a8308"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => track("linkedin_click")}
                         className="rounded-full bg-surface/30 p-1.5 text-textMuted transition-colors hover:text-text"
                         aria-label="LinkedIn profile"
                     >
