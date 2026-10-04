@@ -39,7 +39,7 @@ export default function Navbar() {
                 <a
                     href="#home"
                     onClick={() => setActiveTab("home")}
-                    className="shrink-0 text-subheading-2 font-medium text-text transition-colors hover:text-primary"
+                    className="shrink-0 text-subheading-2 font-medium text-textSecondary transition-colors hover:text-primary"
                 >
                     Maja Giglok
                 </a>
@@ -86,7 +86,7 @@ export default function Navbar() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => track("github_click")}
-                        className="rounded-full bg-surface/30 p-1.5 text-textMuted transition-colors hover:text-text"
+                        className="rounded-full bg-surface/30 p-1.5 text-textSecondary transition-colors hover:text-text"
                         aria-label="GitHub profile"
                     >
                         <GithubIcon className="h-3.5 w-3.5" />
@@ -97,7 +97,7 @@ export default function Navbar() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => track("linkedin_click")}
-                        className="rounded-full bg-surface/30 p-1.5 text-textMuted transition-colors hover:text-text"
+                        className="rounded-full bg-surface/30 p-1.5 text-textSecondary transition-colors hover:text-text"
                         aria-label="LinkedIn profile"
                     >
                         <LinkedInIcon className="h-3.5 w-3.5" />
