@@ -7,7 +7,7 @@ const experiences = [
     {
         company: "Tesco Technology",
         role: "Graduate Software Development Engineer",
-        period: "JUN 2026 - PRESENT",
+        period: "JUL 2026 - PRESENT",
         bulletPoints: [
             "Developing, optimizing, and maintaining microservices on Azure for a vital enterprise document management system, adhering to strict production-grade security and reliability standards.",
         ],
